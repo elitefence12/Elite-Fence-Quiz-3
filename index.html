@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Fence & Outdoor - Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div id="quiz-container" class="w-full max-w-2xl bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-8">
+            <h1 class="text-3xl font-bold text-gray-800 text-center mb-2">Elite Fence & Outdoor Quiz</h1>
+            <p class="text-gray-600 text-center mb-8">Test your knowledge about Tampa Bay's premier fence company!</p>
+            
+            <!-- Quiz Questions Section -->
+            <div id="question-section">
+                <p id="question-text" class="text-xl font-semibold text-gray-700 mb-6"></p>
+                <div id="options-container" class="space-y-4"></div>
+                <button id="next-btn" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg mt-8 hover:bg-blue-700 transition-colors disabled:bg-gray-400">Next Question</button>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results-section" class="hidden text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Quiz Complete!</h2>
+                <p class="text-lg text-gray-600 mb-6">You scored <span id="score" class="font-bold text-blue-600"></span> out of <span id="total-questions" class="font-bold"></span>.</p>
+            </div>
+
+            <!-- Lead Capture Section -->
+            <div id="lead-capture-section" class="hidden mt-10 p-6 bg-gray-50 rounded-lg border border-gray-200">
+                <h3 class="text-xl font-bold text-gray-800 text-center mb-4">Get a Free Quote!</h3>
+                <p class="text-center text-gray-600 mb-6">Fill out the optional form below to get in touch.</p>
+                <form id="lead-form" class="space-y-4">
+                    <input type="text" id="name" placeholder="Name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <input type="email" id="email" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <input type="tel" id="phone" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <button type="submit" id="submit-btn" class="w-full bg-green-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-green-700 transition-colors">Submit</button>
+                </form>
+            </div>
+
+            <!-- Thank You Message -->
+            <div id="thank-you-section" class="hidden text-center mt-10">
+                <p class="text-lg text-gray-700">Thanks for taking the quiz! Want an instant quote? <a href="https://elitefenceandoutdoor.com/instant-online-quote/" target="_blank" class="text-blue-600 font-bold hover:underline">Click here</a> or contact us at <a href="https://elitefenceandoutdoor.com/" target="_blank" class="text-blue-600 font-bold hover:underline">EliteFenceAndOutdoor.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
