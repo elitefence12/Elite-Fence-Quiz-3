@@ -1,0 +1,18 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.quiz-option {
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.quiz-option.selected {
+    background-color: #E0F2FE; /* light-blue-100 */
+    border-color: #3B82F6; /* blue-500 */
+}
+.quiz-option.correct {
+    background-color: #D1FAE5; /* green-100 */
+    border-color: #10B981; /* green-500 */
+}
+.quiz-option.incorrect {
+    background-color: #FEE2E2; /* red-100 */
+    border-color: #EF4444; /* red-500 */
+}
